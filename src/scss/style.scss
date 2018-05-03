@@ -1,0 +1,82 @@
+/*!
+ * CoreUI - Open Source Bootstrap Admin Template
+ * @version v1.0.10
+ * @link http://coreui.io
+ * Copyright (c) 2018 creativeLabs Łukasz Holeczek
+ * @license MIT
+ */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// Override Boostrap variables
+@import "bootstrap-variables";
+// Import Bootstrap source files
+@import "node_modules/bootstrap/scss/bootstrap";
+// Override core variables
+@import "core-variables";
+// Import core styles
+@import "core/core";
+// Custom styles
+@import "custom";
+
+magic-customers {
+  display: flex;
+  flex-direction: row;
+  form {
+    display: flex;
+  }
+  .aside-search {
+    flex: 0 0 auto;
+
+  }
+  .list-company {
+    flex: 0 0 auto;
+  }
+  .tabs-company {
+    .address-form {
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      .form-group {
+        display: flex;
+        flex-wrap: wrap;
+
+        label {
+          flex: 0 0 250px;
+        }
+        input[type=checkbox] {
+          flex: 0 0 auto;
+          margin-right: 10px;
+        }
+        input {
+          flex: 0 0 100px;
+          margin-right: 40px;
+          &.small {
+            flex: 0 0 50px;
+            width: 50px;
+          }
+
+        }
+        button {
+          margin-right: 40px;
+        }
+      }
+      .form-control {
+        width: auto;
+        margin-right: 40px;
+      }
+
+    }
+    .mat-tab-labels {
+      flex-wrap: wrap
+    }
+    .mat-tab-body-wrapper {
+      //height: 100vh
+    }
+  ;
+  }
+
+}
+
+.box-size {
+  min-width: 0;
+  padding: 0 15px;
+}
